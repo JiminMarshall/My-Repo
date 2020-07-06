@@ -1,0 +1,33 @@
+---
+title: "Homework 01"
+author: "Jinhai Chen,3170104884"
+date: "06/07/2020"
+output: pdf_document
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+```
+## Homework for July 6th
+
+### Solution for Exercise 1
+
+a.
+```{r}
+  iowa.df <- read.csv("Data/iowa.csv",header = T)
+```
+
+b.
+```{r}
+  dim(iowa.df)
+```
+
+c.
+```{r}
+  colnames(iowa.df)
+```
+
+d.
+```{r}
+  
+```
