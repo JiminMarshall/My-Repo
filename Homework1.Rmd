@@ -14,7 +14,7 @@ knitr::opts_chunk$set(echo = TRUE)
 
 a.
 ```{r}
-  iowa.df <- read.csv("Data/iowa.csv",header = T)
+  iowa.df <- read.csv("Data/iowa.csv",header = T,sep=";")
 ```
 
 b.
@@ -29,5 +29,51 @@ c.
 
 d.
 ```{r}
-  
+  iowa.df[5,7]
+```
+
+e.
+```{r}
+  iowa.df[2,]
+```
+
+### Solution for Exercise 2
+
+a.
+```{r}
+vector1 <- c("5", "12", "7", "32")
+max(vector1)
+sort(vector1)
+#sum(vector1)
+```
+The first computation can lead out to results, while the last two can not. The reason is that vector1 consists of 4 character variable, but the sort and sum can only sort or add up the numbers rather than the characters. The following codes will do.
+```{r}
+vec1 <-c(5,12,7,32)
+max(vec1)
+sort(vec1)
+sum(vec1)
+```
+
+b.
+
+```{r}
+vector2 <- c("5",7,12)
+#vector2[2] + vector2[3]
+
+dataframe3 <- data.frame(z1="5",z2=7,z3=12)
+dataframe3[1,2] + dataframe3[1,3]
+
+list4 <- list(z1="6", z2=42, z3="49", z4=126)
+list4[[2]]+list4[[4]]
+#list4[2]+list4[4]
+```
+The first question is that the type of vector2 is
+```{r}
+typeof(vector2)
+```
+as a resulr of which can not be added up. the summation can only work for numbers as follows:
+
+```{r}
+  vec2 <- c(5,7,12)
+  vec2[2] + vec2[3]
 ```
