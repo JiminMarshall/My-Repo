@@ -1,2 +1,2 @@
 # My-Repo
-I do not know anything of this
+July 2020, Learning to use RStudio and R language.
